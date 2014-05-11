@@ -17,9 +17,9 @@ items.forEach(function (array) {
 
 
 // finds items made with wood
-var materials = items.map(function(item) {
-	return item.materials.forEach (function (mat) {
-		if (mat == "wood") {
+var materials = items.map(function (item) {
+	return item.materials.forEach (function (mats) {
+		if (mats == "wood") {
 			console.log(item.title, "is made of wood")
 		}
 	})
@@ -43,6 +43,7 @@ items.forEach(function (a,b) {
 		})
 	}
 })
+
 
 
 		
