@@ -16,7 +16,7 @@ simpleData.reduce(function(indexZero, indexOne) {
 	return{name: indexZero.name + " " + indexOne.name};
 })
 
-// Example 2 - reduce - selective 
+// Example 2 - reduce - selective list making
 var lessSimpleData = [{name: "John", age: 30, hobby: "kites"},{name: "Bill", age: 19, hobby: "ninjitsu"},
 {name: "Sarah", age: 24, hobby: "dance"},{name: "Heather", age: 40, hobby: "hackery"}]
 
@@ -59,6 +59,7 @@ var nameArrayObject = nameArray.reduce(function(keyname, keyValue) {
 console.log(nameArrayObject);
 
 // Example 4 - altering the info provided by an existing array of objects
+// into a new array
 
 
 var jamesBond = [
@@ -85,6 +86,7 @@ jamesBond = jamesBond.reduce(function(setOne, bond) {
 console.log(jamesBond);
 
 
+// Example 5 - 
 
 
 
@@ -94,7 +96,28 @@ console.log(jamesBond);
 
 
 
+// Example 11 - forEach squares each number
 
+var numberOne = [1,2,3,4]
+numberOne = numberOne.forEach(function(number) {
+	number = number*number;
+	console.log(number)
+})
+
+
+// Example 12 forEach - if statement to filter for object content
+
+var infoArray = [{info: "target1", response: "noooo you found me!"}, {info: "target2", response: "haha, failed"}, {info: "target3", response: "not even close"}]
+
+var infoArray = infoArray.forEach(function(data){
+	if (data.info == "target1"){
+		console.log(data.response);
+	}
+})
+
+
+
+// Example 21 - .map
 
 
 
